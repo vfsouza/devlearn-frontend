@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<title>devLearn • Cadastro de cursos</title>
+		<link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+		<link href="styles/style.css" rel="stylesheet" />
+		<link href="styles/cadastro.css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://kit.fontawesome.com/06c06c3fc2.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	</head>
+
+	<body onload="usuarioLogado()">
+		<div id="preloader">
+			<div class="inner">
+				<div class="bolas">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-devlearn">
+			<div class="container">
+				<a class="navbar-brand" href="index-logado.html">
+					<img src="assets/logo.png" width="130" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item d-flex">
+							<div class="nav-link">
+								<button onclick="showCursos()" id="showCursos" class="btn btn-roxo font-weight-bold">CURSOS</button>
+							</div>
+							<a class="nav-link" href="perfil.html">
+								<button class="btn btn-roxo font-weight-bold">MEU PERFIL</button>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-7">
+					<div class="mb-4 text-center text-md-left">
+						<h1 class="display-4 font-weight-bold mb-3 text-white ls-sm mt-5">
+							<i>Cadastro de cursos<br />na <strong class="roxo">devLearn</strong></i>
+						</h1>
+						<p class="lead text-white-50 mt-5">
+							Seja bem-vindo a página de cadastro de cursos em nossa plataforma.
+							<br /><strong>Preencha os campos ao lado.</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<iframe name="fr" id="fr" style="display: none"></iframe>
+
+		<form id="form-add-curso">
+			<div class="row">
+				<div class="col-xl-6 col-lg-6 col-md-12 mx-auto">
+					<div class="card m-5" style="z-index: 1">
+						<div class="card-body p-6 pb-1" id="cadastro">
+							<div class="mb-4">
+								<h1 class="mb-4 lh-1 font-weight-bold h2">Cadastro de cursos</h1>
+							</div>
+							<div class="form-group d-flex">
+								<div class="col-6 pl-0">
+									<input id="inputTitulo" type="text" name="titulo" class="form-control cad" placeholder="Título" required />
+								</div>
+								<div class="col-6 pr-0">
+									<select name="area" class="form-control cad" id="inputArea">
+										<option value="0">Selecionar área</option>
+										<option value="1">Front-end</option>
+										<option value="2">Back-end</option>
+										<option value="3">Mobile</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group d-flex">
+								<div class="col-4 pl-0">
+									<input id="inputNome" type="text" name="autor" class="form-control cad" placeholder="Autor" required />
+								</div>
+								<div class="col-4">
+									<input id="inputIdioma" type="text" name="idioma" class="form-control cad" placeholder="Idioma" required />
+								</div>
+								<div class="col-4 pr-0">
+									<input id="inputConteudo" type="text" name="conteudo" class="form-control cad" placeholder="Conteúdo" required />
+								</div>
+							</div>
+							<div class="form-group">
+								<input id="inputUrl" type="text" name="url" class="form-control cad" placeholder="URL" />
+							</div>
+							<div class="form-group">
+								<input id="submit" type="submit" value="Cadastrar" id="btnInsert" class="btn btn-primary btn-block mt-4" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<footer class="py-5 bg-devlearn mt-5">
+			<div class="container">
+				<p class="m-0 text-center text-white footer">
+					<img class="img-fluid" width="100" src="assets/logo_footer.png" />
+					<br />
+					2021 © <strong>devLearn</strong>. Todos os direitos reservados.
+					<br />
+					<button class="btn btn-secondary btn-sm mt-3 redes-sociais">
+						<i class="fab fa-facebook"></i>
+					</button>
+					<button class="btn btn-secondary btn-sm mt-3 redes-sociais">
+						<i class="fab fa-twitter"></i>
+					</button>
+					<button class="btn btn-secondary btn-sm mt-3 redes-sociais">
+						<i class="fab fa-youtube"></i>
+					</button>
+					<button class="btn btn-secondary btn-sm mt-3 redes-sociais">
+						<i class="fab fa-instagram"></i>
+					</button>
+				</p>
+			</div>
+		</footer>
+
+		<script>
+			$("#inputMod").change(function () {
+				let num = $(this).val();
+				criaModulos(num);
+			});
+			function subForm() {
+				window.location.reload();
+			}
+		</script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./scripts/cadastro.js"></script>
+		<script src="./scripts/scripts.js"></script>
+	</body>
+</html>

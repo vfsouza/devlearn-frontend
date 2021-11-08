@@ -1,0 +1,21 @@
+.cardMod {
+	background-color: #e1d4eb;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+.card-curso p {
+	color: black;
+}
+
+.card-curso > p {
+	font-size: 1.25rem;
+}
+
+.card-curso > div {
+	flex-wrap: wrap;
+}
+
+.card-curso > div > div {
+	padding: 0;
+	margin: 0;
+}

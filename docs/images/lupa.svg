@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="270.5368"
+   height="344.74017"
+   viewBox="0 0 270.53681 344.74018"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="lupa.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.2645833"
+     inkscape:cx="164.87644"
+     inkscape:cy="147.87479"
+     inkscape:window-width="1365"
+     inkscape:window-height="908"
+     inkscape:window-x="323"
+     inkscape:window-y="61"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect4077"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Usar a regra de preenchimento par ou ímpar na caixa de diálogo &lt;b&gt;preenchimento e contorno&lt;/b&gt; se nenhum resultado nivelar após converter o clipe em caminhos." />
+    <inkscape:path-effect
+       effect="powermask"
+       id="path-effect2085"
+       is_visible="true"
+       lpeversion="1"
+       uri="#mask-powermask-path-effect2085"
+       invert="false"
+       hide_mask="false"
+       background="false"
+       background_color="#ffffffff" />
+    <filter
+       id="mask-powermask-path-effect1999_inverse"
+       inkscape:label="filtermask-powermask-path-effect1999"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect1999_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect1999_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect2033_inverse"
+       inkscape:label="filtermask-powermask-path-effect2033"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect2033_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect2033_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask-powermask-path-effect2085">
+      <g
+         id="g2083"
+         clip-path="none"
+         transform="matrix(0.85470086,0,0,0.85470086,144.11014,80.42917)"
+         style="fill:#000000">
+        <g
+           inkscape:label="Clip"
+           id="g2081"
+           style="fill:#000000">
+          <circle
+             style="fill:#000000;fill-rule:evenodd"
+             id="circle2079"
+             cx="1002.7018"
+             cy="553.54199"
+             r="185.04118" />
+        </g>
+      </g>
+    </mask>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4073">
+      <ellipse
+         style="display:none;fill:#000000;stroke-width:0.940447"
+         id="ellipse4075"
+         cx="1070.8472"
+         cy="548.98608"
+         rx="102.62749"
+         ry="101.88382"
+         d="M 1173.4747,548.98608 A 102.62749,101.88382 0 0 1 1070.8472,650.8699 102.62749,101.88382 0 0 1 968.21968,548.98608 102.62749,101.88382 0 0 1 1070.8472,447.10226 102.62749,101.88382 0 0 1 1173.4747,548.98608 Z" />
+      <path
+         id="lpe_path-effect4077"
+         style="fill:#000000;stroke-width:0.940447"
+         class="powerclip"
+         d="M 938.44594,417.19284 H 1204.1373 V 681.0314 H 938.44594 Z M 1173.4747,548.98608 A 102.62749,101.88382 0 0 0 1070.8472,447.10226 102.62749,101.88382 0 0 0 968.21968,548.98608 102.62749,101.88382 0 0 0 1070.8472,650.8699 102.62749,101.88382 0 0 0 1173.4747,548.98608 Z" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-943.44594,-422.19284)">
+    <path
+       style="fill:#000000;stroke-width:1.17154"
+       id="path3753"
+       clip-path="url(#clipPath4073)"
+       inkscape:path-effect="#path-effect4077"
+       sodipodi:type="arc"
+       sodipodi:cx="1071.2916"
+       sodipodi:cy="549.11212"
+       sodipodi:rx="127.84569"
+       sodipodi:ry="126.91928"
+       d="M 1199.1373,549.11212 A 127.84569,126.91928 0 0 1 1071.2916,676.0314 127.84569,126.91928 0 0 1 943.44594,549.11212 127.84569,126.91928 0 0 1 1071.2916,422.19284 127.84569,126.91928 0 0 1 1199.1373,549.11212 Z" />
+    <g
+       inkscape:groupmode="layer"
+       id="layer3"
+       inkscape:label="Camada 2" />
+    <ellipse
+       style="fill:#000000;stroke-width:0.062391"
+       id="path2674"
+       cx="-592.02246"
+       cy="-1293.6593"
+       rx="9.5077515"
+       ry="9.7352686"
+       transform="rotate(146.74991)"
+       inkscape:export-filename="C:\Users\vinif\lupa.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#000000;stroke-width:0.165893"
+       id="rect2820"
+       width="19.014416"
+       height="145.13206"
+       x="-601.52911"
+       y="-1293.4326"
+       transform="rotate(146.74991)"
+       inkscape:export-filename="C:\Users\vinif\lupa.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
