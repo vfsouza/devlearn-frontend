@@ -65,13 +65,13 @@
 		</div>
 		<iframe name="fr" id="fr" style="display: none"></iframe>
 
-		<form id="form-add-curso">
-			<div class="row">
-				<div class="col-xl-6 col-lg-6 col-md-12 mx-auto">
-					<div class="card m-5" style="z-index: 1">
-						<div class="card-body p-6 pb-1" id="cadastro">
+		<div class="row justify-content-center d-flex">
+			<div class="col-xl-5 col-lg-5 col-md-12">
+				<div class="card m-2" style="z-index: 1">
+					<div class="card-body p-6 pb-1" id="cadastro">
+						<form id="form-add-curso">
 							<div class="mb-4">
-								<h1 class="mb-4 lh-1 font-weight-bold h2">Cadastro de cursos</h1>
+								<h1 class="mb-4 lh-1 font-weight-bold h2">Cadastro de Cursos</h1>
 							</div>
 							<div class="form-group d-flex">
 								<div class="col-6 pl-0">
@@ -103,11 +103,45 @@
 							<div class="form-group">
 								<input id="submit" type="submit" value="Cadastrar" id="btnInsert" class="btn btn-primary btn-block mt-4" />
 							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
-		</form>
+			<div class="col-xl-3 col-lg-3 col-md-12">
+				<div class="card m-2" style="z-index: 1">
+					<div class="card-body p-6 pb-1" id="cadastro">
+						<form id="form-add-modulo">
+							<div class="mb-4">
+								<h1 class="mb-4 lh-1 font-weight-bold h2">Cadastro de Módulos</h1>
+							</div>
+							<div class="form-group d-flex">
+								<div class="col-4 pl-0">
+									<input id="inputIdCurso" type="text" name="idMod" class="form-control cad" placeholder="ID do Curso" required />
+								</div>
+								<div class="col-8 pr-0">
+									<input id="inputTopicoMod" type="text" name="topicoMod" class="form-control cad" placeholder="Tópico do Módulo" required />
+								</div>
+							</div>
+							<div class="form-group">
+								<input id="inputTituloMod" type="text" name="tituloMod" class="form-control cad" placeholder="Título do Módulo" required />
+							</div>
+							<div id="modContent" class="modContent">
+								<div class="form-group d-flex createContent">
+									<div class="col-5 p-0">
+										<input type="button" class="btn btn-primary btn-block" value="Adicionar Vídeo" onclick="createContent(1)" />
+									</div>
+									<div class="col-2 p-0 d-flex justify-content-center font-weight-bold" style="font-size: 18px; align-items: center; display: flex">OU</div>
+									<div class="col-5 p-0">
+										<input type="button" class="btn btn-primary btn-block" value="Adicionar Desafio" onclick="createContent(2)" />
+									</div>
+								</div>
+							</div>
+							<div id="submit-button"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<footer class="py-5 bg-devlearn mt-5">
 			<div class="container">
@@ -133,12 +167,9 @@
 		</footer>
 
 		<script>
-			$("#inputMod").change(function () {
-				let num = $(this).val();
+			function modulos() {
+				let num = $("#inputMod").val();
 				criaModulos(num);
-			});
-			function subForm() {
-				window.location.reload();
 			}
 		</script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
